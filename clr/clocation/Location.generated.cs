@@ -40,19 +40,19 @@ namespace CLocation {
         private static global::System.Collections.Generic.List<global::net.sf.jni4net.jni.JNINativeMethod> @__Init(global::net.sf.jni4net.jni.JNIEnv @__env, global::java.lang.Class @__class) {
             global::System.Type @__type = typeof(__Location);
             global::System.Collections.Generic.List<global::net.sf.jni4net.jni.JNINativeMethod> methods = new global::System.Collections.Generic.List<global::net.sf.jni4net.jni.JNINativeMethod>();
-            methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "GetCurrentLocation", "GetCurrentLocation0", "()Lclocation/Response;"));
+            methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "GetCurrentLocation", "GetCurrentLocation0", "()Lclocation/LocationResponse;"));
             methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "__ctorLocation0", "__ctorLocation0", "(Lnet/sf/jni4net/inj/IClrProxy;)V"));
             return methods;
         }
         
         private static global::net.sf.jni4net.utils.JniHandle GetCurrentLocation0(global::System.IntPtr @__envp, global::net.sf.jni4net.utils.JniLocalHandle @__obj) {
-            // ()Lclocation/Response;
-            // ()LCLocation/Response;
+            // ()Lclocation/LocationResponse;
+            // ()LCLocation/LocationResponse;
             global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.Wrap(@__envp);
             global::net.sf.jni4net.utils.JniHandle @__return = default(global::net.sf.jni4net.utils.JniHandle);
             try {
             global::CLocation.Location @__real = global::net.sf.jni4net.utils.Convertor.StrongJp2C<global::CLocation.Location>(@__env, @__obj);
-            @__return = global::net.sf.jni4net.utils.Convertor.StrongC2Jp<global::CLocation.Response>(@__env, @__real.GetCurrentLocation());
+            @__return = global::net.sf.jni4net.utils.Convertor.StrongC2Jp<global::CLocation.LocationResponse>(@__env, @__real.GetCurrentLocation());
             }catch (global::System.Exception __ex){@__env.ThrowExisting(__ex);}
             return @__return;
         }

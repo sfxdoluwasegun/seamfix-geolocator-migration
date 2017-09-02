@@ -6,7 +6,7 @@ package com.sf.kyc.GeoLocation;
 import java.io.File;
 
 import clocation.Location;
-import clocation.Response;
+import clocation.LocationResponse;
 import net.sf.jni4net.Bridge;
 
 /**
@@ -15,7 +15,7 @@ import net.sf.jni4net.Bridge;
  */
 public class Locator {
 	
-	public static Response getLocation() throws Exception {
+	public static LocationResponse getLocation() throws Exception {
     	Bridge.setVerbose(false);
     	Bridge.init();
     	

@@ -46,8 +46,10 @@ namespace CLocation {
             methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "setLongitude", "Longitude3", "(D)V"));
             methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "getAccuracy", "Accuracy4", "()D"));
             methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "setAccuracy", "Accuracy5", "(D)V"));
-            methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "getCivicAddress", "CivicAddress6", "()Ljava/lang/String;"));
-            methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "setCivicAddress", "CivicAddress7", "(Ljava/lang/String;)V"));
+            methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "getLocationSource", "LocationSource6", "()Ljava/lang/String;"));
+            methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "setLocationSource", "LocationSource7", "(Ljava/lang/String;)V"));
+            methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "getCivicAddress", "CivicAddress8", "()Ljava/lang/String;"));
+            methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "setCivicAddress", "CivicAddress9", "(Ljava/lang/String;)V"));
             methods.Add(global::net.sf.jni4net.jni.JNINativeMethod.Create(@__type, "__ctorCoordinate0", "__ctorCoordinate0", "(Lnet/sf/jni4net/inj/IClrProxy;)V"));
             return methods;
         }
@@ -118,7 +120,29 @@ namespace CLocation {
             }catch (global::System.Exception __ex){@__env.ThrowExisting(__ex);}
         }
         
-        private static global::net.sf.jni4net.utils.JniHandle CivicAddress6(global::System.IntPtr @__envp, global::net.sf.jni4net.utils.JniLocalHandle @__obj) {
+        private static global::net.sf.jni4net.utils.JniHandle LocationSource6(global::System.IntPtr @__envp, global::net.sf.jni4net.utils.JniLocalHandle @__obj) {
+            // ()Ljava/lang/String;
+            // ()LSystem/String;
+            global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.Wrap(@__envp);
+            global::net.sf.jni4net.utils.JniHandle @__return = default(global::net.sf.jni4net.utils.JniHandle);
+            try {
+            global::CLocation.Coordinate @__real = global::net.sf.jni4net.utils.Convertor.StrongJp2C<global::CLocation.Coordinate>(@__env, @__obj);
+            @__return = global::net.sf.jni4net.utils.Convertor.StrongC2JString(@__env, @__real.LocationSource);
+            }catch (global::System.Exception __ex){@__env.ThrowExisting(__ex);}
+            return @__return;
+        }
+        
+        private static void LocationSource7(global::System.IntPtr @__envp, global::net.sf.jni4net.utils.JniLocalHandle @__obj, global::net.sf.jni4net.utils.JniLocalHandle value) {
+            // (Ljava/lang/String;)V
+            // (LSystem/String;)V
+            global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.Wrap(@__envp);
+            try {
+            global::CLocation.Coordinate @__real = global::net.sf.jni4net.utils.Convertor.StrongJp2C<global::CLocation.Coordinate>(@__env, @__obj);
+            @__real.LocationSource = global::net.sf.jni4net.utils.Convertor.StrongJ2CString(@__env, value);
+            }catch (global::System.Exception __ex){@__env.ThrowExisting(__ex);}
+        }
+        
+        private static global::net.sf.jni4net.utils.JniHandle CivicAddress8(global::System.IntPtr @__envp, global::net.sf.jni4net.utils.JniLocalHandle @__obj) {
             // ()Ljava/lang/String;
             // ()LSystem/String;
             global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.Wrap(@__envp);
@@ -130,7 +154,7 @@ namespace CLocation {
             return @__return;
         }
         
-        private static void CivicAddress7(global::System.IntPtr @__envp, global::net.sf.jni4net.utils.JniLocalHandle @__obj, global::net.sf.jni4net.utils.JniLocalHandle value) {
+        private static void CivicAddress9(global::System.IntPtr @__envp, global::net.sf.jni4net.utils.JniLocalHandle @__obj, global::net.sf.jni4net.utils.JniLocalHandle value) {
             // (Ljava/lang/String;)V
             // (LSystem/String;)V
             global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.Wrap(@__envp);

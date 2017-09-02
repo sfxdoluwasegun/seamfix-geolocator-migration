@@ -47,6 +47,12 @@ public class Coordinate extends system.Object {
     public native void setAccuracy(double value);
     
     @net.sf.jni4net.attributes.ClrMethod("()LSystem/String;")
+    public native java.lang.String getLocationSource();
+    
+    @net.sf.jni4net.attributes.ClrMethod("(LSystem/String;)V")
+    public native void setLocationSource(java.lang.String value);
+    
+    @net.sf.jni4net.attributes.ClrMethod("()LSystem/String;")
     public native java.lang.String getCivicAddress();
     
     @net.sf.jni4net.attributes.ClrMethod("(LSystem/String;)V")

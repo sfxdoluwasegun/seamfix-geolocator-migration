@@ -10,33 +10,30 @@
 package clocation;
 
 @net.sf.jni4net.attributes.ClrType
-public class Location extends system.Object {
+public class LocationResponseCode extends system.Object {
     
     //<generated-proxy>
     private static system.Type staticType;
     
-    protected Location(net.sf.jni4net.inj.INJEnv __env, long __handle) {
+    protected LocationResponseCode(net.sf.jni4net.inj.INJEnv __env, long __handle) {
             super(__env, __handle);
     }
     
     @net.sf.jni4net.attributes.ClrConstructor("()V")
-    public Location() {
+    public LocationResponseCode() {
             super(((net.sf.jni4net.inj.INJEnv)(null)), 0);
-        clocation.Location.__ctorLocation0(this);
+        clocation.LocationResponseCode.__ctorLocationResponseCode0(this);
     }
     
     @net.sf.jni4net.attributes.ClrMethod("()V")
-    private native static void __ctorLocation0(net.sf.jni4net.inj.IClrProxy thiz);
-    
-    @net.sf.jni4net.attributes.ClrMethod("()LCLocation/LocationResponse;")
-    public native clocation.LocationResponse GetCurrentLocation();
+    private native static void __ctorLocationResponseCode0(net.sf.jni4net.inj.IClrProxy thiz);
     
     public static system.Type typeof() {
-        return clocation.Location.staticType;
+        return clocation.LocationResponseCode.staticType;
     }
     
     private static void InitJNI(net.sf.jni4net.inj.INJEnv env, system.Type staticType) {
-        clocation.Location.staticType = staticType;
+        clocation.LocationResponseCode.staticType = staticType;
     }
     //</generated-proxy>
 }

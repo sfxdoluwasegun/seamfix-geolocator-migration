@@ -1,6 +1,6 @@
 package com.sf.kyc.GeoLocation;
 
-import clocation.Response;
+import clocation.LocationResponse;
 
 /**
  * Hello world!
@@ -13,7 +13,7 @@ public class App
         System.out.println("-- Init! --");
         
         try {
-        	Response resp = Locator.getLocation();
+        	LocationResponse resp = Locator.getLocation();
         	System.out.println(resp.getDescription());
         	System.out.println(resp.getCoordinate().getLatitude() + "," + resp.getCoordinate().getLongitude());
         } catch (Exception e) {
